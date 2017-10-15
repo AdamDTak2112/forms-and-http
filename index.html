@@ -5,7 +5,7 @@
 		<title>Testing headers</title>
 	</head>
 	<body>
-		<form action="#" method="GET">
+		<form action="#" method="POST">
 
 
 			<!-- your widgets go in here -->
@@ -59,13 +59,22 @@
 				<input type="radio" name="gender" value="female"/>Female<br>
 				<input type="radio" name="gender" value="other"/>Other
 			</div>
-
+			
 			<div>
-				<button type="submit">Submit Form</button>
+				Check the box if you consent to giving this information:
+				<input type="checkbox" name="consent"/>
 			</div>
 			
 			<div>
-				<button type="reset">Reset Form</button>
+				<input name="slider" type="range" min="0" max="100">
+			</div>
+
+			<div>
+				<button type="submit" value="Submit">Submit Form</button>
+			</div>
+			
+			<div>
+				<button type="reset" value="Reset">Reset Form</button>
 			</div>
 		</form>
 	</body>
